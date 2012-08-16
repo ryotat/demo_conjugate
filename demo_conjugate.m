@@ -119,25 +119,5 @@ if x0>=min(xx) && x0<max(xx)
   set(h,'color',col,'linestyle','--','linewidth',2);
 end
 
-% $$$ function cbClickDual(src, eventdata,funcp,xx,ax)
-% $$$ cp=get(ax(2),'CurrentPoint');
-% $$$ y0=cp(1,1); d0=cp(1,2);
-% $$$ yl=get(ax(2),'xlim');
-% $$$ if y0>=yl(1) && y0<=yl(2)
-% $$$   col=colormap;
-% $$$   kk=mod1(15*(length(get(ax(1),'children'))+length(get(ax(2),'children'))), size(col,1))
-% $$$   col=col(kk,:);
-% $$$ 
-% $$$   axes(ax(2));
-% $$$   h=line(y0,d0);
-% $$$   set(h,'color',col,'marker','o','linewidth',2);
-% $$$ 
-% $$$   axes(ax(1));
-% $$$   xl=get(gca,'xlim');
-% $$$   h=line(xl, xl*y0-d0);
-% $$$   set(h,'color',col,'linestyle','--','linewidth',2);
-% $$$   grid on;
-% $$$ end
-
 function m=mod1(n,k)
 m=mod(n-1,k)+1;
